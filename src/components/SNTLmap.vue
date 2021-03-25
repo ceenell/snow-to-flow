@@ -1703,13 +1703,21 @@ export default {
           .attr("r", this.site_radius)
 
         // add hover effect
-    /*   this.d3.selectAll(".SNTL")
+      this.d3.selectAll(".SNTL")
         .on("mouseover", function(data) {
           self.hover(data, self.site_radius*2, "orchid");
         })
         .on("mouseout", function(data){
           self.hoverOut(data, self.site_radius);
-        })  */
+        }) 
+
+         this.d3.selectAll(".SNTL_nodata")
+        .on("mouseover", function(data) {
+          self.hover(data, self.site_radius*2, "orchid");
+        })
+        .on("mouseout", function(data){
+          self.hoverOut(data, self.site_radius);
+        }) 
         
       },
       hover(data, to, color){

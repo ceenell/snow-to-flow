@@ -47,12 +47,14 @@
 import VizSection from '@/components/VizSection';
 import LineChart from '@/components/LineChart';
 import * as d3 from 'd3';
+import Sidebar from '@/components/Sidebar';
 
 export default {
     name: "SWE",
     components:{
         VizSection,
-        LineChart  
+        LineChart,
+        Sidebar  
     },
     data() {
       return {

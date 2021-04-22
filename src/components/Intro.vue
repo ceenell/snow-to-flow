@@ -32,13 +32,13 @@
 </template>
 <script>
 import VizSection from '@/components/VizSection';
-import Sidebar from '@/components/Sidebar';
+//import Sidebar from '@/components/Sidebar';
 
 export default {
     name: "Intro",
     components:{
         VizSection,
-        Sidebar
+        //Sidebar
     },
      mounted() {
           this.$nextTick(() => {

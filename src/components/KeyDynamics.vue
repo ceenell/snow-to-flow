@@ -29,7 +29,7 @@
         </template>
         <template v-slot:sidebarMessage>
           <p><span class="emph">Melt timing</span>is a measure of how when snowmelt occurs, and is marked by the date at which the maximum SWE accumulated during the winter is half gone<sup>7</sup>.
-          Melt timing is measured as days since October 1st (beginning of the water year) at which one-half of the annual maximum SWE has melted.
+          Melt timing is measured as days since October 1st (beginning of the water year) at which one-half of the annual maximum SWE has melted.</p>
         </template>
       </Sidebar>
       <Sidebar>

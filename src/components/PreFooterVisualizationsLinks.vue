@@ -9,10 +9,10 @@
         >
           <figure>
             <img
-              src="@/assets/components/PreFooterVisualizationsLinks/images/DRBthumb.png"
+              src="@/assets/components/PreFooterVisualizationsLinks/images/temp-monitor.jpg"
               alt=""
             >
-            <figcaption>Water science and management in the Delaware River Basin</figcaption>
+            <figcaption>How we monitor stream temperature in the Delaware River Basin</figcaption>
           </figure>
         </a>
         <a
@@ -21,10 +21,10 @@
         >
           <figure>
             <img
-              src="@/assets/components/PreFooterVisualizationsLinks/images/fire-hydro.jpg"
+              src="@/assets/components/PreFooterVisualizationsLinks/images/snow-to-flow.jpg"
               alt=""
             >
-            <figcaption>How wildfires threaten U.S. water supplies</figcaption>
+            <figcaption>From Snow to Flow</figcaption>
           </figure>
         </a>
       </div>
@@ -45,6 +45,8 @@
 </script>
 
 <style scoped lang="scss">
+$notWhite: white;
+$nearBlack: #1a1b1c; 
 /* for mobile */
 #app {
   .pre-footer-links {
@@ -56,10 +58,10 @@
     font-weight: 400;
     padding-top: .25em;
     p {
-      color: white;
+      color: $nearBlack;
       font-size: 1.3em;
     }
-    background-color: #292b30;
+    background-color: $notWhite;
 
     .footer-viz-links {
       margin: 0 auto;
@@ -75,7 +77,7 @@
       }
       a {
         figcaption {
-          color: white;
+          color: $nearBlack;
           text-align: center;
           padding-bottom: 0.5em;
         }
@@ -100,7 +102,7 @@
 
 #code-repository-link-container {
   a {
-    color:white;
+    color:$notWhite;
   }
 }
 </style>

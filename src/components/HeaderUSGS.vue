@@ -53,7 +53,8 @@
   }
   /* header (only) nav */
   .header-nav {
-    background: #292b30;
+    background: #383836;
+;
   }
   .logo-header img {
     margin-top: 8px;

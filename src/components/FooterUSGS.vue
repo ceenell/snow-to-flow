@@ -58,7 +58,7 @@
             </li>
             <li class="twitter">
               <a
-                href="https://twitter.com/usgs_r"
+                href="https://twitter.com/usgs_datasci"
                 target="_blank"
                 aria-label="twitter link"
               >
@@ -76,29 +76,11 @@
             </li>
             <li class="github">
               <a
-                href="https://github.com/usgs"
+                href="https://github.com/usgs-vizlab"
                 target="_blank"
                 aria-label="github link"
               >
                 <font-awesome-icon :icon="{ prefix: 'fab', iconName: 'github' }"><span class="only">GitHub</span></font-awesome-icon>
-              </a>
-            </li>
-            <li class="flickr">
-              <a
-                href="https://flickr.com/usgeologicalsurvey"
-                target="_blank"
-                aria-label="flickr link"
-              >
-                <font-awesome-icon :icon="{ prefix: 'fab', iconName: 'flickr' }"><span class="only">Flickr</span></font-awesome-icon>
-              </a>
-            </li>
-            <li class="youtube">
-              <a
-                href="https://github.com/USGS-VIZLAB/snow-to-flow"
-                target="_blank"
-                aria-label="youtube link"
-              >
-                <font-awesome-icon :icon="{ prefix: 'fab', iconName: 'youtube-square' }"><span class="only">YouTube</span></font-awesome-icon>
               </a>
             </li>
             <li class="instagram">
@@ -183,7 +165,7 @@
     content: none;
   }
   footer.footer {
-    background: #292b30;
+    background: #565656;
     padding-bottom: 0;
     position: relative;
     width: 100%;

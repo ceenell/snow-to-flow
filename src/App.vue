@@ -69,13 +69,11 @@ $frostyGreen: #90d3b5; // good contrast against black (original was #5e8a76)
 $deepGreen: #235845; // good contrast against white
 $frostyPurple: #C9ADE6;
 $deepPurple: #301546; // good contrast against black
-$skyBlue: rgb(12, 117, 221); //lets use just one blue
-$deepBlue: rgb(12, 117, 221); //lets use just one blue
-$lightGrey: #c2c4c5;
-$darkGrey: #212122;
+$lightGrey: #e5e4e6;
+$darkGrey: #e5e4e6;
 $familyMain: 'Public sans', sans-serif;
 $familySerif:  'Noto Serif', serif;
-
+$notWhite: white;
 // Type
 html,
 body {
@@ -83,7 +81,7 @@ body {
       margin: 0;
       padding: 0;
       color: $nearBlack;
-      background-color: white;
+      background-color: $notWhite;
       line-height: 1.2;
       font-size: 16px;
       font-family:$familySerif;
@@ -101,14 +99,13 @@ h1{
   font-family: $familyMain;
   line-height: 1;
   text-align: left;
-  text-shadow: 1px 1px 100px rgba(0,0,0,.8);
   @media screen and (max-width: 600px) {
     font-size: 5em;
   }
 }
 
 h2{
-  color: $darkGrey;
+  color:$nearBlack;
   font-weight: 600;
   text-align: left;
   font-family:$familyMain;
@@ -122,6 +119,7 @@ h2{
 
 h3{
   font-size: 1.5em;
+  color: $nearBlack;
   padding-top: .5em;
   font-family: $familyMain;
   font-weight: 300;
@@ -132,6 +130,7 @@ h3{
 
 p {
   padding: 1em 0 0 0; 
+  color: $nearBlack;
 }
 
 .overall-title {
@@ -155,7 +154,6 @@ p {
   font-size: .8em;
   color: $nearBlack; 
 }
-
 
   // General Layout  
   section {
@@ -205,14 +203,13 @@ p {
   }
 
   .figure-content {
-    border: 1px white;
+    border: 1px $notWhite;
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: space-evenly;
     align-content: space-around;
     max-width: 100%;
-    // padding: 0 100px;
     margin: auto;
 
     @media screen and (max-width: 600px) {
@@ -231,10 +228,9 @@ p {
 }
 
 .viz-title {
-  // box-shadow: -5px -5px $monotoneBlue5;
   font-size: 1.4em;
   font-weight: 700;
-  color: $darkGrey;
+  color: $nearBlack;
   margin-bottom: 0;
   @media screen and (max-width: 600px) {
        font-size: 1.2em;
@@ -254,7 +250,7 @@ p {
 }
 
 .legend-text {
-    fill: $deepPurple;
+    fill: $nearBlack;
     font-family: $familyMain;
     font-size: 16px;
   }
@@ -267,7 +263,7 @@ p {
 }
 .viz-emph {
   font-weight:700;
-  fill: white;
+  fill: $notWhite;
   font-family: $familyMain;
   font-size: 26px;
 }
@@ -287,13 +283,13 @@ p {
 
 // Link Styling
 a:link { 
-  text-decoration: underline;
+  text-decoration: none;
   font-weight: bold;
-  color: dodgerBlue;
+  color: $nearBlack;
   padding: 5px 0;
 } 
 a:visited { 
-  color: dodgerBlue; 
+  color: $nearBlack; 
 } 
 a:hover {
   text-decoration:none;

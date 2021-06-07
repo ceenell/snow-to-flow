@@ -10,7 +10,8 @@ import Vuetify from "vuetify";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import "vuetify/dist/vuetify.min.css";
-import gsap from "gsap";
+import VueCarousel from 'vue-carousel';
+import VueImg from 'v-img'
 
 // social icons
 import { faTwitterSquare } from "@fortawesome/free-brands-svg-icons";
@@ -19,15 +20,13 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faFlickr } from "@fortawesome/free-brands-svg-icons";
 import { faYoutubeSquare } from "@fortawesome/free-brands-svg-icons";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
-import VueCarousel from 'vue-carousel';
-import VueImg from 'v-img'
+
 
 const vueImgConfig = {
   altAsTitle: true
 }
 
 Vue.component("font-awesome-icon", FontAwesomeIcon);
-Vue.prototype.$gsap = gsap;
 
 // social icons
 library.add(faTwitterSquare);

@@ -24,17 +24,17 @@
 </script>
 
 <style lang="scss">
+$nearBlack: #1a1b1c; 
   #code-repository-link-container {
     display: flex;
     justify-content: center;
     width: 100%;
-    background-color: white;
+    background-color: #c2c4c5;
     margin: 0 auto;
     padding-bottom: 0.4rem;
     a {
-      color: #281d31;
+      color: #090211;
       font-family: 'Source Sans Pro',sans-serif;
-      font-size: 12px;
       text-decoration: none
     }
   }

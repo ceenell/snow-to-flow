@@ -5,7 +5,7 @@ swe_magnitude <- function(data){
   swe_apr1 <- data |>
     filter(date == as.Date(sprintf('%s-04-01', year))) |>
     # group_by(site_id, WY) |>
-    distinct(site_id, WY, snow_water_equivalent) |>
+    distinct(site_id, WY, date_apr1 = date, snow_water_equivalent) |>
     rename(swe_apr1 = snow_water_equivalent)
 
   # Find peak SWE and SM50 SWE
@@ -14,8 +14,7 @@ swe_magnitude <- function(data){
     group_by(site_id, WY) |>
     slice(which.max(snow_water_equivalent)) |>
     rename(swe_peak = snow_water_equivalent) |>
-    mutate(swe_sm50 = swe_peak/2) |>
-    select(-year)
+    mutate(swe_sm50 = swe_peak/2)
 
   # expand to every year for every site
   expand_grid(
@@ -24,5 +23,10 @@ swe_magnitude <- function(data){
   ) |>
     left_join(swe_apr1) |>
     left_join(swe_peak)
+
+}
+
+
+melt_timing <- function(data) {
 
 }

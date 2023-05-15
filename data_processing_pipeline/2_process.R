@@ -6,7 +6,8 @@ p2_targets_list <- list(
     p2_snotel_data,
     p1_snotel_files |> purrr::map_dfr(read_csv) |>
       mutate(year = year(date),
-             WY = dataRetrieval::calcWaterYear(date))
+             WY = dataRetrieval::calcWaterYear(date),
+             WY_day = lubridate::yday(date))
 
   ),
 
@@ -14,7 +15,10 @@ p2_targets_list <- list(
   tar_target(
     p2_snotel_swe,
     swe_magnitude(p2_snotel_data)
-
+  ),
+  tar_target(
+    p2_snotel_timing,
+    melt_timing(p2_snotel_data)
   )
 
 )
